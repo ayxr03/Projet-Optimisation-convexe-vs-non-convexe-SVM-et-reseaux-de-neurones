@@ -13,12 +13,14 @@ This project explores and compares convex and non-convex optimization techniques
     * Normalized pixel values
     * Binary label encoding
 * **Split:**
-    * 80% Training/Validation
-    * 20% Test
+    * 80% of the filtered original MNIST training data used for training
+    * 20% of the filtered original MNIST training data used for validation
+    * 100% of the filtered original MNIST test data used for testing
 
 ## Models and Optimizers
 
 ### Support Vector Machine (SVM)
+* Tuned using HalvingGridSearchCV
 * Trained using SMO
 
 ### Multilayer Perceptron (MLP)
